@@ -1,2 +1,1 @@
-# Dictionary
- 
+# React + TypeScript + Vite
