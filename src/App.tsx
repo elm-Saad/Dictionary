@@ -1,10 +1,27 @@
 // import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
+//import Component
+import Layout from "./Component/Layout"
+
+//import pages
+import Dictionary from "./pages/Dictionary"
+
+import NotFound from "./pages/NotFound"
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-red-600">
-      Hello world!
-    </h1>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Dictionary />} />
+            {/* <Route path="traduction" element={<Traduction />} /> */}
+            {/* ... */}
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 

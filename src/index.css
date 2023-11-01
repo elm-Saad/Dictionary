@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --cl-green-main:#00ebb3;
+    --cl-green-sec:#00bb8e;
+    --cl-dark-gray:#565656;
+    --cl-light-gray:#d6d6d6;
+    --cl-orang:#ff7c00;
+    --cl-light-red:#fa7878;
+}
+
+.bg-green-main{
+    background-color: var(--cl-green-main);
+}
+.cl-green-main{
+    color: var(--cl-green-main);
+}
+
+.bg-green-sec{
+    background-color: var(--cl-green-sec);
+}
+.cl-green-sec{
+    color: var(--cl-green-sec);
+}
+
+.bg-dark-gray{
+    background-color: var(--cl-dark-gray);
+}
+.cl-dark-gray{
+    color: var(--cl-dark-gray);
+}
+
+.bg-light-gray{
+    background-color: var(--cl-light-gray);
+}
+.cl-light-gray{
+    color: var(--cl-light-gray);
+}
+
+.bg-orang{
+    background-color: var(--cl-orang);
+}
+.cl-orang{
+    color: var(--cl-orang);
+}
+
+.bg-light-red{
+    background-color: var(--cl-light-red);
+}
+.cl-light-red{
+    color: var(--cl-light-red);
+}
